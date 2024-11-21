@@ -113,9 +113,9 @@ int main ()
 {
 
 	int opcao=0; // definindo as variaveis
-	int laço=1;
+	int laco=1;
 
-	for(laço=1;laço=1;)
+	for(laco=1;laco=1;)
 
 	{
 
