@@ -79,13 +79,13 @@ int consulta()
 
 		while(fgets(conteudo, 200, file) !=NULL)
 		{
-			printf("/nEssas sao as informaçoes do usuário");
+			printf("/nEssas sao as informações do usuário");
 			printf("%s", conteudo);
 			printf("/n/n ");
 
 		}
 
-			system("read -p 'Pressione Enter para continuar...' var");
+			system("pause");
 		
 }
 
@@ -119,20 +119,20 @@ int main ()
 
 	{
 
-	system("clear");
+	system("cls");
 
 	setlocale(LC_ALL, "Portuguese"); //definindo a linguagem
 
 	printf("###Cartório de Thales###\n\n");//inicio do menu
-	printf("Escolha a Opção desejada no menu:\n\n");
+	printf("Escolha a Opçâo desejada no menu:\n\n");
 	printf("\t1 - Registrar Nomes\n");
 	printf("\t2 - Consultar Nomes\n");
 	printf("\t3 - Excluir Nomes\n\n");
-	printf("Opção: ");//fim do menu
+	printf("\t4 - Sair do sistema\n\n:");//fim do menu
 
-	scanf("%d", &opcao);//armazenando a escolha do usuário
+	scanf("%d", &opcao);//armazenando a escolha do usu�rio
 
-	system("clear");
+	system("cls");
 
 
 
@@ -151,15 +151,17 @@ int main ()
 		deletar();
 		break;
 
+		case 4:
+		printf("Obrigado por utilizar o sistema!\n");
+		return 0;
+		break;
+
 		default: 
 		printf("esta opcao nao está disponivel\n");
-		system("read -p 'Pressione Enter para continuar...' var");
+		system("pause");
 		break;
 
 	}
 }
 }
-
-
-
 
